@@ -7,12 +7,13 @@ def dict_add(a, points1, points2, count):
     a[points1][points2] = 0
   a[points1][points2] += count
 
-# pos1, pos2, [pts1, pts2] 
+# pos1, pos2, pts1, pts2, count
 b = []
 for j in range(11):
   b.append([])
   for i in range(11):
     b[j].append({})
+# Starting positions go in here.
 dict_add(b[4][1], 0, 0, 1)
 d = [0] * 10
 
