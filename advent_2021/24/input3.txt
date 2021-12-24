@@ -1,0 +1,9 @@
+inp w
+eql x 0 
+add y w
+add y 12
+add z y
+inp w
+mul y 0
+add y 26
+mul y z
