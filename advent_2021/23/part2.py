@@ -119,7 +119,7 @@ def MoveToHall(all_maps, m, mcost):
  
 m = []
 all_maps = {}
-fp = open("input2.txt", 'r')
+fp = open("test2.txt", 'r')
 for line in fp:
   l = []
   for c in line[:-1]:
@@ -130,7 +130,7 @@ AddMapToDict(all_maps, m, 0)
 
 while True:
   cheapest = min(all_maps.keys())
-  print cheapest
+  #print cheapest
   for m in all_maps[cheapest]:
     if IsSolved(m):
       PrintMap(m)
